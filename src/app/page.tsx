@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { OverviewChart } from "@/components/overview-chart";
-import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AlertTriangle, X, ChevronRight } from "lucide-react";
 
 /**
@@ -23,7 +22,6 @@ import { AlertTriangle, X, ChevronRight } from "lucide-react";
  */
 export default function DashboardPage() {
   return (
-    <ErrorBoundary>
       <div className="space-y-8">
       {/* Top Row: Welcome Card with Integrated Delivery Status */}
       <Card>
@@ -204,6 +202,5 @@ export default function DashboardPage() {
         </Tabs>
       </div>
       </div>
-    </ErrorBoundary>
   );
 }

@@ -1,6 +1,5 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import type { AppError } from '@/types';
 
 /**
  * Utility function to merge Tailwind CSS classes
@@ -229,25 +228,6 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
   };
 }
 
-/**
- * Create an error object
- * @param message - Error message
- * @param code - Error code
- * @param details - Additional error details
- * @returns AppError object
- */
-export function createError(
-  message: string,
-  code: string = 'UNKNOWN_ERROR',
-  details?: Record<string, unknown>
-): AppError {
-  return {
-    code,
-    message,
-    details,
-    timestamp: new Date().toISOString(),
-  };
-}
 
 /**
  * Check if a string is a valid email

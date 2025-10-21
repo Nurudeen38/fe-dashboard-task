@@ -29,10 +29,10 @@ export default function DashboardPage() {
           <div className="flex justify-between items-start">
             <div>
               <CardTitle className="text-3xl font-bold text-gray-400 tracking-tight">Hey Sharon,</CardTitle>
-              <CardDescription className="text-3xl font-semibold mt-2 text-gray-800">
-               <span> You've made </span>
+              <CardDescription className="text-3xl font-semibold mt-2 text-black-300">
+               <span className="text-black-300"> You've made </span>
                 <span className="inline-flex items-center gap-2 ml-2">
-                  <span className="font-bold text-blue-600 text-3xl">$5,864</span>
+                  <span className="font-bold text-blue-300 text-3xl">$5,864</span>
                 </span>
                 <span> this week,</span>  
               </CardDescription>
@@ -61,7 +61,7 @@ export default function DashboardPage() {
       </Card>
 
        {/* Download App Card */}
-       <Card className="relative bg-blue-600 text-white">
+       <Card className="relative bg-blue-300 text-white">
          <Button variant="ghost" size="icon" className="absolute top-2 right-2 hover:bg-blue-700 hover:text-white">
            <X className="h-4 w-4" />
          </Button>
@@ -72,7 +72,7 @@ export default function DashboardPage() {
            </CardDescription>
          </CardHeader>
          <CardContent className="space-y-3">
-           <Button variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 w-full">Download app</Button>
+           <Button variant="secondary" className="bg-white text-blue-300 hover:bg-gray-100 w-full">Download app</Button>
            <p className="text-xs text-blue-200 text-center">Available for iOS and Android</p>
          </CardContent>
        </Card>
@@ -132,7 +132,7 @@ export default function DashboardPage() {
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <div>
                     <CardTitle className="text-xl font-bold">Net sales</CardTitle>
-                    <CardDescription className="text-3xl font-bold text-blue-600 mt-2">$29,917.90</CardDescription>
+                    <CardDescription className="text-3xl font-bold text-blue-300 mt-2">$29,917.90</CardDescription>
                   </div>
                   <Button variant="link" className="p-0 h-auto">View report {'>'}</Button>
                 </CardHeader>

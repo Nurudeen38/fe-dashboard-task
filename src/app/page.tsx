@@ -68,7 +68,7 @@ export default function DashboardPage() {
          <CardHeader>
            <CardTitle className="text-white">Run your restaurant anywhere.</CardTitle>
            <CardDescription className="text-blue-100">
-             Download the Owner app.
+             Download the CORESYSTEM app.
            </CardDescription>
          </CardHeader>
          <CardContent className="space-y-3">

@@ -1,5 +1,4 @@
-// components/sidebar.tsx
-"use client"; // This component has interactive elements
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
